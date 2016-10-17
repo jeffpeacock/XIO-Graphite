@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Graphite>
+    <CarbonServer>server.domain</CarbonServer>
+    <CarbonServerPort>2003</CarbonServerPort>
+    <MetricRoot>apikey.xtremio.</MetricRoot>
+  </Graphite>
+  <Array>
+    <User>user</User>
+    <Pass>supersecretpassword</Pass>
+    <Domain>domain.com</Domain>
+  </Array>	
+  <Debug>
+    <Retain metricCSV = "False"/>
+  </Debug>
+  <Monitor>
+    <Scope Type = "volumes" Enabled ="True">
+      <Metric Name = "small-iops" Enabled = "False"/>
+      <Metric Name = "wr-latency" Enabled = "True"/>
+      <Metric Name = "num-of-dest-snaps" Enabled = "False"/>
+      <Metric Name = "iops" Enabled = "True"/>
+      <Metric Name = "num-of-lun-mappings" Enabled = "True"/>
+      <Metric Name = "acc-num-of-rd" Enabled = "False"/>
+      <Metric Name = "acc-size-of-wr" Enabled = "False"/>
+      <Metric Name = "unaligned-rd-iops" Enabled = "False"/>
+      <Metric Name = "rd-bw" Enabled = "True"/>
+      <Metric Name = "wr-iops" Enabled = "True"/>
+      <Metric Name = "acc-num-of-wr" Enabled = "False"/>
+      <Metric Name = "unaligned-wr-bw" Enabled = "False"/>
+      <Metric Name = "small-rd-bw" Enabled = "False"/>
+      <Metric Name = "acc-num-of-small-wr" Enabled = "False"/>
+      <Metric Name = "logical-space-in-use" Enabled = "True"/>
+      <Metric Name = "lb-size" Enabled = "True"/>
+      <Metric Name = "acc-num-of-small-rd" Enabled = "False"/>
+      <Metric Name = "acc-size-of-rd" Enabled = "True"/>
+      <Metric Name = "small-wr-bw" Enabled = "False"/>
+      <Metric Name = "unaligned-iops" Enabled = "False"/>
+      <Metric Name = "unaligned-bw" Enabled = "True"/>
+      <Metric Name = "small-rd-iops" Enabled = "False"/>
+      <Metric Name = "vol-size" Enabled = "True"/>
+      <Metric Name = "avg-latency" Enabled = "True"/>
+      <Metric Name = "small-wr-iops" Enabled = "False"/>
+      <Metric Name = "small-bw" Enabled = "False"/>
+      <Metric Name = "rd-latency" Enabled = "True"/>
+      <Metric Name = "small-io-ratio" Enabled = "False"/>
+      <Metric Name = "unaligned-wr-iops" Enabled = "False"/>
+      <Metric Name = "bw" Enabled = "True"/>
+      <Metric Name = "rd-iops" Enabled = "True"/>
+      <Metric Name = "wr-bw" Enabled = "True"/>
+    </Scope>
+    <Scope Type = "clusters" Enabled ="True">
+      <Metric Name = "iops" Enabled = "True"/>
+      <Metric Name = "bw" Enabled = "True"/>
+      <Metric Name = "rd-iops" Enabled = "True"/>
+      <Metric Name = "wr-iops" Enabled = "True"/>
+      <Metric Name = "rd-bw" Enabled = "True"/>
+      <Metric Name = "wr-bw" Enabled = "True"/>
+      <Metric Name = "avg-latency" Enabled = "True"/>
+      <Metric Name = "rd-latency" Enabled = "True"/>
+      <Metric Name = "wr-latency" Enabled = "True"/>
+      <Metric Name = "data-reduction-ratio" Enabled = "True"/>
+      <Metric Name = "dedup-ratio" Enabled = "True"/>
+      <Metric Name = "compression-factor" Enabled = "True"/>
+      <Metric Name = "space-in-use" Enabled = "True"/>
+      <Metric Name = "logical-space-in-use" Enabled = "True"/>
+    </Scope>
+  </Monitor>
+</Configuration>
